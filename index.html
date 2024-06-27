@@ -3,44 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biografía Personal</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            max-width: 800px;
-            margin: 30px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            text-align: center;
-            color: #007BFF;
-        }
-    </style>
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+<style>
+    /* styles.css */
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #61e4e1
+        ;
+        color: #333;
+    }
+   
+   
+
+
+
+    header {
+        background-color: #2396e3;
+        color: white;
+        padding: 1em 0;
+        text-align: center;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 0 1em;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    
+
+    
+        section {
+            padding: 2em;
+            margin: 2em 0;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            
+        }
+        section img {
+        position: absolute;
+        left: 20px;
+        top: 14%;
+        transform: translateY(-50%);
+        height: 150px; /* Ajusta el tamaño de la imagen según tus necesidades */
+        width: 150px;
+    
+}
+
+    h2 {
+        border-bottom: 2px solid #333;
+        padding-bottom: 0.5em;
+    }
+
+    .proyecto {
+        margin-bottom: 2em;
+    }
+
+    .proyecto h3 {
+        margin-top: 0;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    ul li {
+        background: #e7e7e7;
+        margin: 0.5em 0;
+        padding: 0.5em;
+        border-radius: 4px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form label {
+        margin-top: 1em;
+    }
+
+    form input, form textarea {
+        padding: 0.5em;
+        margin-top: 0.5em;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    form button {
+        margin-top: 1em;
+        padding: 0.7em;
+        border: none;
+        border-radius: 4px;
+        background-color: #30ac45;
+        color: white;
+        cursor: pointer;
+    }
+
+    form button:hover {
+        background-color: #77b1ae
+        ;
+    }
+
+    footer {
+        background-color: #0d0d0d;
+        color: white;
+        text-align: center;
+        padding: 1em 0;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+
+    footer p {
+        margin: 0;
+    }
+
+
+    </style>
 <body>
-    <div class="container">
-        <h1>Tu Nombre</h1>
-        <p>
-            Hola, soy Tu Nombre. Nací y crecí en [Ciudad, País]. Desde una edad temprana, he tenido una gran pasión por [tu interés o pasión principal]. Esta pasión me llevó a estudiar [tu campo de estudio] en [nombre de la universidad u otra institución], donde obtuve mi [título universitario].
-        </p>
-        <p>
-            A lo largo de mi carrera profesional, he trabajado en diversas áreas, incluyendo [menciona algunos campos o industrias en las que has trabajado]. He tenido la oportunidad de desempeñarme en roles como [menciona algunos puestos de trabajo o roles importantes], lo que me ha permitido adquirir una valiosa experiencia en [menciona habilidades o áreas de expertise].
-        </p>
-        <p>
-            En mi tiempo libre, disfruto de [menciona algunos de tus hobbies o actividades de tiempo libre], lo que me ayuda a mantener un equilibrio entre mi vida personal y profesional. Además, me apasiona [menciona algún interés adicional o causa que apoyes], y me involucro activamente en [menciona alguna organización o actividad comunitaria].
-        </p>
-        <p>
-            Mi objetivo es seguir creciendo tanto personal como profesionalmente, y contribuir de manera positiva en todo lo que hago. Estoy siempre abierto a nuevas oportunidades y desafíos que me permitan seguir aprendiendo y desarrollándome.
-        </p>
-    </div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <h1>Mi Portafolio</h1>
+    </header>
+
+    <section id="sobre-mi">
+        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Logo">
+        <h2>Sobre Mí</h2>
+        <p>Hola, soy [Tu Nombre], un [tu profesión] con experiencia en [tu especialización]. Me apasiona [tu pasión] y disfruto trabajando en [tu campo de trabajo].</p>
+    </section>
+
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <div class="proyecto">
+            <h3>Proyecto 1</h3>
+            <p>Descripción del proyecto 1.</p>
+        </div>
+        <div class="proyecto">
+            <h3>Proyecto 2</h3>
+            <p>Descripción del proyecto 2.</p>
+        </div>
+        <!-- Agrega más proyectos según sea necesario -->
+    </section>
+
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <ul>
+            <li>Habilidad 1</li>
+            <li>Habilidad 2</li>
+            <li>Habilidad 3</li>
+            <!-- Agrega más habilidades según sea necesario -->
+        </ul>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="mailto:tucorreo@example.com" method="post" enctype="text/plain">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 [Tu Nombre]. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
+
